@@ -1,0 +1,94 @@
+{
+  "id": "c742c5f4-3ea1-41fd-9174-250ae6974144",
+  "version": "2.0",
+  "name": "Fisrt-Step tests",
+  "url": "https://extensao-first-step.vercel.app",
+  "tests": [{
+    "id": "e26e7118-516a-424c-acc4-84c35963431a",
+    "name": "login",
+    "commands": [{
+      "id": "e1c4423f-98fa-4d72-a7c2-c08b9718b979",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7054d3df-49e0-4897-9844-c64456cc4e9e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1176x702",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6147ff67-db20-4f58-a336-124166982c9b",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(2) > .undefined",
+      "targets": [
+        ["css=a:nth-child(2) > .undefined", "css:finder"],
+        ["xpath=//div[@id='root']/section/div/div/div/div/a[2]/button", "xpath:idRelative"],
+        ["xpath=//div/div/div/a[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Entrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b31eac7d-59f6-4ff0-a786-0555e2659ac6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.input-card-div:nth-child(1) > .input-card-input",
+      "targets": [
+        ["css=.input-card-div:nth-child(1) > .input-card-input", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/main/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "616ee773-fb07-4b0a-a22b-a5d94837b945",
+      "comment": "",
+      "command": "type",
+      "target": "css=.input-card-div:nth-child(1) > .input-card-input",
+      "targets": [
+        ["css=.input-card-div:nth-child(1) > .input-card-input", "css:finder"],
+        ["xpath=//input[@value='felipemartinsbn@gmail.com']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/main/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "felipemartinsbn@gmail.com"
+    }, {
+      "id": "012760d0-1249-4faf-b2d9-48c601840bbf",
+      "comment": "",
+      "command": "type",
+      "target": "css=.input-card-div:nth-child(2) > .input-card-input",
+      "targets": [
+        ["css=.input-card-div:nth-child(2) > .input-card-input", "css:finder"],
+        ["xpath=//input[@value='123456']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/main/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "1a82bc9a-1cff-4680-b6c9-ff53c503c926",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(3)",
+      "targets": [
+        ["css=.btn:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='root']/main/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "6651d03a-a2cf-46ac-861a-5c327738265d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e26e7118-516a-424c-acc4-84c35963431a"]
+  }],
+  "urls": ["https://extensao-first-step.vercel.app/"],
+  "plugins": []
+}
