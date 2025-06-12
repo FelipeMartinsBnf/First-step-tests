@@ -30,7 +30,7 @@ class TestTestesalvarvaga():
       EC.url_contains("dash")
     )
 
-    driver.maximize_window()
+    driver.set_window_size(3840, 2160)
 
     WebDriverWait(self.driver, 10).until(
       EC.element_to_be_clickable((By.CSS_SELECTOR, ".card-link:nth-child(2) .btn"))
